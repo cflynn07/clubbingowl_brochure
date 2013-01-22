@@ -427,7 +427,7 @@ blockquote {
 =========================================================*/
 .breadcrumbs {
 	padding:10px;
-	border:1px solid #e5e5e5;
+	border:1px solid #404040;
 	margin-bottom: 10px;
 }
 
@@ -448,7 +448,7 @@ table {
 
 table th, table td {
 	padding:11px;
-	border:1px solid #e5e5e5;
+	border:1px solid #404040;
 }
 
 /* Pricing Tables
@@ -463,7 +463,7 @@ table th, table td {
 	float: left; 
 	display: inline;
 	margin:10px 0;
-	border-right:1px solid #fff;
+	border-right:1px solid #404040;
 	position:relative;
 }
 
@@ -473,8 +473,12 @@ table th, table td {
 	float: left; 
 	display: inline;
 	margin:10px 0;
-	border-right:1px solid #fff;
+	border-right:1px solid #404040;
 	position:relative;
+}
+
+.pricing-tables-1 .tables-column:last-child, .pricing-tables-2 .tables-column:last-child {
+	border-right:0;
 }
 
 .tables-column .header {
@@ -488,9 +492,9 @@ table th, table td {
 }
 
 .tables-column.featured{
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .20);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .20);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .20);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .80);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .80);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .80);
 	z-index:1;
 }
 
@@ -552,6 +556,8 @@ table th, table td {
 }
 
 
+
+
 /* Videos
 =========================================================*/
 .video-wrap {
@@ -590,9 +596,10 @@ table th, table td {
 =========================================================*/
 .form-elements input[type="text"], .form-elements select, .form-elements textarea, .form-elements2 input[type="text"], .form-elements2 select, .form-elements2 textarea {
 	padding:6px;
-	border:1px solid #e4e4e3;
+	border:1px solid #303030;
     color:#8c8d8b;
 	border-radius:2px;
+	background:#3E3E3E;
 }
 
 .form-elements input[type="text"] {
@@ -617,7 +624,7 @@ table th, table td {
 .form-elements label {
 	min-width:90px;
 	display:inline-block;
-	color:#666;
+	color:#ACACAC;
 }
 
 /* form2 */
@@ -628,7 +635,7 @@ table th, table td {
 
 .form-elements2 label {
 	display:inline-block;
-	color:#666;
+	color:#ACACAC;
 	margin-bottom:10px;
 	width:100%;
 }

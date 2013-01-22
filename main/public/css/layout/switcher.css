@@ -45,6 +45,10 @@
 	overflow:hidden;
 }
 
+.hide {
+	display:none; /* first load page enough */
+}
+
 /* Layout Box */
 .layout-switcher {
 	margin:0 0 10px 0;
@@ -159,7 +163,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -184,7 +188,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -216,7 +220,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -246,7 +250,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -277,7 +281,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 

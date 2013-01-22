@@ -20,7 +20,7 @@ body.subtlenet2 { background:url(../bg/subtlenet2.jpg) repeat; }
 #wrap.boxed {
 	width:990px;
 	margin:25px auto;
-	background:#fff;
+	background:#292929;
 	-webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 	box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
