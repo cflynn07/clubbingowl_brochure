@@ -45,6 +45,10 @@
 	overflow:hidden;
 }
 
+.hide {
+	display:none; /* first load page enough */
+}
+
 /* Layout Box */
 .layout-switcher {
 	margin:0 0 10px 0;
@@ -93,7 +97,7 @@
 
 .styleswitch#blue   { background-color:#00aec8; }
 .styleswitch#orange { background-color:#ee7e2a; }
-.styleswitch#purple { background-color:#81519c; }
+.styleswitch#purple { background-color:#474D6A; }
 .styleswitch#red    { background-color:#e64141; }
 .styleswitch#green  { background-color:#53b808; }
 
@@ -159,7 +163,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -184,7 +188,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -216,7 +220,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -246,7 +250,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 
@@ -277,7 +281,7 @@ a.dark-style {
 	width:100%;
 	height:auto;
 	z-index:200;
-	background:#fff;
+	background:#292929;
 	padding:0 .775%;
 }
 

@@ -1,4 +1,4 @@
-define(['jquery', 'history', 'modules/log'], function($, History, log){
+define(['jquery', 'history', 'modules/log', 'ganalytics'], function($, History, log, gaq){
 	
 	var target = $('div[data-role="main"]');
 
@@ -46,6 +46,7 @@ define(['jquery', 'history', 'modules/log'], function($, History, log){
 					
 				});
 				
+				_gaq.push(['_setAccount', 'UA-36400090-1']);
 				Backbone.history.loadUrl();
 				return true;
 				
