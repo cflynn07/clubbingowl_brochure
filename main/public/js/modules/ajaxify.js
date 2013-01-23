@@ -1,4 +1,4 @@
-define(['jquery', 'history', 'modules/log', 'ganalytics'], function($, History, log, gaq){
+define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, History, log, gaq){
 	
 	var target = $('div[data-role="main"]');
 
