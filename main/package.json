@@ -6,8 +6,9 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": 			"3.0.6",
-    "ejs": 				"*",
-    "html-minifier": 	"*"
+    "express": 		"3.0.6",
+    "ejs": 		"*",
+    "html-minifier": 	"*",
+    "coffee-script":	"*"
   }
 }
