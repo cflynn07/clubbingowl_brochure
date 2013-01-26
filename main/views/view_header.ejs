@@ -30,9 +30,12 @@
   <link rel="stylesheet" href="/css/icons.css">  
   
   <link rel="shortcut icon" href="/images/favicon.ico">  
-	
-  <script data-main="js/app" src="js/libs/require.js"></script>
 
+<% if(false){ %>
+	<script data-main="js/app" src="js/libs/require.js"></script>
+<% }else{ %>
+	<script src="js/app-built.js"></script>
+<% } %>
   <!-- Favicons -->
 	  <link rel="shortcut icon" href="/images/favicon/favicon.ico">
 
