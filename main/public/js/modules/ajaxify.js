@@ -14,11 +14,10 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 		if(!internal)
 			return false;
 		
-		
-	//	var
-	//		State 	= History.getState(),
-	//		url 	= State.url;
-					
+		if(window.location.pathname == url || window.location.href == url)
+			return true;
+
+
 		// Ajax Request the Traditional Page
 		$.ajax({
 			url: 		url,
@@ -38,7 +37,7 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 						History.pushState({}, title, url);
 						
 						_gaq.push(['_setAccount', 'UA-36400090-1']);
-						Backbone.history.loadUrl();
+					//	Backbone.history.loadUrl();
 						
 					});
 					

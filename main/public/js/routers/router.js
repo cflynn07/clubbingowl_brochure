@@ -4,14 +4,58 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], fun
 	
 	var Router = Backbone.Router.extend({
 		initialize: function(){
-			Backbone.history.start();
+			Backbone.history.start({
+				pushState: 	true,
+				hashChange: false
+			});
 		},
 		routes: {
-			'': 'index'
+			'about*splat':			'about',
+			'blog*splat': 			'blog',
+			'contact*splat': 		'contact',
+			'features-faq*splat':	'features_faq',
+			'*splat': 				'index'
+		},
+		about: function(){
+			
+			log('about');
+			
+		},
+		blog: function(){
+			
+			log('blog');
+			
+		},
+		contact: function(){
+			
+			log('contact');
+			
+		},
+		features_faq: function(){
+			
+			log('features_faq');
+			
+		//	_gaq.push(['_trackPageview']);
+			
+			$('#toggle-view li').click(function(){
+								
+				var text = $(this).children('div.panel');
+				
+				if (text.is(':hidden')) {
+					text.slideDown('200');
+					$(this).children('span').html('-');
+				} else {
+					text.slideUp('200');
+					$(this).children('span').html('+');
+				}
+			});
+			
 		},
 		index: function(){
 			
-			console.log('Router --> index()');
+			log('index');
+			
+		//	_gaq.push(['_trackPageview']);
 			
 			$('.flexslider').flexslider({
 				animation: 'fade',

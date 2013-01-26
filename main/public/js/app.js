@@ -7,7 +7,8 @@ requirejs.config({
 		history: 		'libs/history',
 		carousel:		'libs/carousel',
 		eislideshow:	'libs/jquery.eislideshow',
-		flexslider:		'libs/jquery.flexslider'
+		flexslider:		'libs/jquery.flexslider',
+		ganalytics: 	'modules/ganalytics'
 	},
     shim: {
         jquery: {
@@ -32,19 +33,19 @@ requirejs.config({
         flexslider: {
         	deps:		['jquery'],
         	exports:	'flexslider'
+        },
+        ganalytics: {
+        	expors:		'_gaq'
         }
     }
 });
 
-require(['routers/router', 'jquery'], function(Router, $){
+require(['routers/router', 'jquery', ], function(Router, $){
 
 	$(function(){
-		
+				
 		//and we're off
-		new Router({
-			pushState: 	true,
-			hashChange: false
-		});
+		new Router();
 		
 	});
 	
