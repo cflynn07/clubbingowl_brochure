@@ -27,12 +27,12 @@ app.configure () ->
 app.configure 'development', () ->
   app.use express.errorHandler()
 
-app.get '/',         routes.index
-app.get '/services', routes.services
-app.get '/about',    routes.about 
-app.get '/blog',     routes.blog
-app.get '/contact',  routes.contact
-app.get '*',         routes.error
+app.get '/',              routes.index
+app.get '/features-faq',  routes.features
+app.get '/about',         routes.about 
+app.get '/blog',          routes.blog
+app.get '/contact',       routes.contact
+app.get '*',              routes.error
 
 http.createServer(app).listen app.get('port'), (x) ->
   console.log 'Express server listening on port ' + app.get('port')

@@ -60,8 +60,8 @@ render_views = (req, res, body_view, code = 200) ->
 exports.index = (req, res) ->
   render_views(req, res, 'view_index')
     
-exports.services = (req, res) ->
-  render_views(req, res, 'view_services')
+exports.features = (req, res) ->
+  render_views(req, res, 'view_features')
 
 exports.about = (req, res) ->
   render_views(req, res, 'view_about')
@@ -73,4 +73,4 @@ exports.contact = (req, res) ->
   render_views(req, res, 'view_contact')
 
 exports.error = (req, res) ->
-  render_views(req, res, 'view_error', '404')
+  render_views(req, res, 'view_404', 404)
