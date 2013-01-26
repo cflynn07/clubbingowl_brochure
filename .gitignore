@@ -1,5 +1,7 @@
 .DS_Store
 .DS_Store?
-Thubs.db
-node_modules/
-
+thumbs.db
+main/node_modules/
+*.log
+*.js
+!main/public/js/libs/*.js

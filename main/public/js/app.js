@@ -1,10 +1,13 @@
 requirejs.config({
 	baseUrl: '/js/',
 	paths: {
-		jquery: 	'libs/jquery',
-		underscore: 'libs/underscore',
-		backbone: 	'libs/backbone',
-		history: 	'libs/history'
+		jquery: 		'libs/jquery',
+		underscore: 	'libs/underscore',
+		backbone: 		'libs/backbone',
+		history: 		'libs/history',
+		carousel:		'libs/carousel',
+		eislideshow:	'libs/jquery.eislideshow',
+		flexslider:		'libs/jquery.flexslider'
 	},
     shim: {
         jquery: {
@@ -17,18 +20,32 @@ requirejs.config({
         history: {
         	deps: 		['jquery'],
         	exports: 	'History'
+        },
+        carousel: {
+        	deps: 		['jquery'],
+        	exports: 	'carousel'
+        },
+        eislideshow: {
+        	deps:		['jquery'],
+        	exports:	'eislideshow'
+        },
+        flexslider: {
+        	deps:		['jquery'],
+        	exports:	'flexslider'
         }
     }
 });
 
-require(['routers/router'], function(Router){
+require(['routers/router', 'jquery'], function(Router, $){
 
-	
-	//and we're off
-	new Router({
-		pushState: 	true,
-		hashChange: false
+	$(function(){
+		
+		//and we're off
+		new Router({
+			pushState: 	true,
+			hashChange: false
+		});
+		
 	});
-	
 	
 });

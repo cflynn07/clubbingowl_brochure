@@ -13,20 +13,11 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 		
 		if(!internal)
 			return false;
-			
-		var title = document.title;
-		History.pushState({}, title, url);
 		
-		return true;
-	};
-	
-	// Hook into State Changes
-	$(window).bind('statechange',function(){
-														
-		// Prepare Variables
-		var
-			State 	= History.getState(),
-			url 	= State.url;
+		
+	//	var
+	//		State 	= History.getState(),
+	//		url 	= State.url;
 					
 		// Ajax Request the Traditional Page
 		$.ajax({
@@ -40,14 +31,19 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 				target.slideUp('slow', function(){
 					
 					target.html(data);
+				
 					target.slideDown('slow', function(){
+						
+						var title = document.title;
+						History.pushState({}, title, url);
+						
+						_gaq.push(['_setAccount', 'UA-36400090-1']);
+						Backbone.history.loadUrl();
 						
 					});
 					
 				});
-				
-				_gaq.push(['_setAccount', 'UA-36400090-1']);
-				Backbone.history.loadUrl();
+								
 				return true;
 				
 			},
@@ -56,9 +52,25 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 				return false;
 			}
 		});	
-					
-	});
+		
+		
+		
+		
+		return true;
+	};
 	
+	// Hook into State Changes
+	$(window).bind('statechange',function(){
+		
+		return;
+		
+		var
+			State 	= History.getState(),
+			url 	= State.url;
+		
+		Ajaxify(url);
+		
+	});
 	
 	return Ajaxify;
 	

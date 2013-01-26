@@ -9,7 +9,7 @@ define(['backbone', 'jquery', 'modules/log', 'modules/ajaxify'], function(Backbo
 		events: {
 			'click a:not(.no-ajaxify)': 'click_ajaxify',
 			'click ul#nav li a': 		'click_nav',
-			'click a#logo':				'click_logo'
+			'click div.logo a':			'click_logo'
 		},
 		click_logo: function(e){
 			

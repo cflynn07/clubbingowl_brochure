@@ -51,7 +51,7 @@
   app.get('*', routes.error);
 
   http.createServer(app).listen(app.get('port'), function(x) {
-    return console.log("Express server listening on port " + app.get('port'));
+    return console.log('Express server listening on port ' + app.get('port'));
   });
 
 }).call(this);
