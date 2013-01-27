@@ -2,15 +2,16 @@
 	wrap:	true,
 	baseUrl: ".",
 	paths: {
-		jquery: 	'libs/jquery',
+		jquery: 		'libs/jquery',
 		underscore: 	'libs/underscore',
-		backbone: 	'libs/backbone',
-		history: 	'libs/history',
-		carousel:	'libs/carousel',
+		backbone: 		'libs/backbone',
+		history: 		'libs/history',
+		carousel:		'libs/carousel',
 		eislideshow:	'libs/jquery.eislideshow',
-		flexslider:	'libs/jquery.flexslider',
+		flexslider:		'libs/jquery.flexslider',
 		ganalytics: 	'modules/ganalytics',
-		almond: 	'libs/almond'
+		almond: 		'libs/almond',
+		tweet: 			'libs/jquery.tweet'
 	},
 	name: 		"./libs/almond",
 	include:	 "app",
@@ -19,6 +20,9 @@
         jquery: {
             exports: 'jQuery'
         },
+        tweet: {
+			deps: 		['jquery']
+		},
         backbone: {
         	deps: 		['underscore', 'jquery'],
         	exports: 	'Backbone'
