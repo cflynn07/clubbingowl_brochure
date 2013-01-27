@@ -3,5 +3,4 @@
 thumbs.db
 main/node_modules/
 *.log
-*.js
-!main/public/js/libs/*.js
+
