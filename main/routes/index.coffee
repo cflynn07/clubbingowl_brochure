@@ -71,7 +71,7 @@ features_object =
     ]
   private_and_collaberative_notes:
     title:  "Private and Collaberative Notes"
-    image:  ""
+    image:  "Notes"
     desc:   "Know your client even before they know you! Add private or collaborative notes to your clientele database and deliver exceptional customer service. Set yourself apart from competitors and capture clientele preferences as you grow your client base."
   
     
