@@ -8,7 +8,8 @@ requirejs.config({
 		carousel:		'libs/carousel',
 		eislideshow:	'libs/jquery.eislideshow',
 		flexslider:		'libs/jquery.flexslider',
-		ganalytics: 	'modules/ganalytics'
+		ganalytics: 	'modules/ganalytics',
+		tweet: 			'libs/jquery.tweet'
 	},
     shim: {
         jquery: {

@@ -13,7 +13,8 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], fun
 			'about*splat':			'about',
 			'blog*splat': 			'blog',
 			'contact*splat': 		'contact',
-			'features-faq*splat':	'features_faq',
+			'faq*splat': 			'faq',
+			'features*splat':		'features',
 			'*splat': 				'index'
 		},
 		about: function(){
@@ -31,11 +32,8 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], fun
 			log('contact');
 			
 		},
-		features_faq: function(){
-			
-			log('features_faq');
-			
-		//	_gaq.push(['_trackPageview']);
+		faq: function(){
+			log('faq');
 			
 			$('#toggle-view li').click(function(){
 								
@@ -49,6 +47,15 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], fun
 					$(this).children('span').html('+');
 				}
 			});
+			
+		},
+		features: function(){
+			
+			log('features');
+			
+		//	_gaq.push(['_trackPageview']);
+			
+			
 			
 		},
 		index: function(){
