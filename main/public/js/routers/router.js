@@ -54,6 +54,20 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider', 'col
 			log('features');
 			
 			$('[data]').colorTip({color:'yellow'});
+			 $('.flexslider2').flexslider({
+				animation: 'slide',
+				animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+				slideshow: true,                //Boolean: Animate slider automatically
+				slideshowSpeed: 4500,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+				animationSpeed: 700,             //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+				pauseOnHover: true, 
+				pauseOnAction:false,
+				controlNav: false,
+				directionNav: true,
+				controlsContainer: '.flex-container'
+			});
+			
+			$('.flex-direction-nav a').addClass('no-ajaxify');
 			
 		//	_gaq.push(['_trackPageview']);
 			

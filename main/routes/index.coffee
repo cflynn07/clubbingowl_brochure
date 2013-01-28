@@ -7,10 +7,18 @@ features_object =
     title:  "One Click RSVP Widget"
     image:  "RSVPWidget"
     desc:   "Simple widget that enables clientele to join guest lists and reserve tables through a single click and without having to fill out cumbersome RSVP forms. You recieve consistent and reliable data, providing meaningful insights into your clientele. The widget can be placed on any webpage and Facebook fan-page or can be accessed at ClubbingOwl.com"
+    additional_images: [
+      "RSVPWidget_1"
+      "RSVPWidget_2"
+      "RSVPWidget_3"
+    ]
   sms_communication:
     title:  "SMS Communication"
     image:  "SMSCommunication"
     desc:   "Use SMS to make announcements to your team and your clientele directly to their mobile. Enable your promoters to confirm reservation requests and send confirmations automatically."
+    additional_images: [
+      "SMSCommunication_1"
+    ]
   viral_facebook_marketing:
     title:  "Viral Facebook Marketing"
     image:  "ViralFacebook"
