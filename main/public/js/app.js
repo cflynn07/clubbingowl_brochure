@@ -9,13 +9,17 @@ requirejs.config({
 		eislideshow:	'libs/jquery.eislideshow',
 		flexslider:		'libs/jquery.flexslider',
 		ganalytics: 	'modules/ganalytics',
-		tweet: 			'libs/jquery.tweet'
+		tweet: 			'libs/jquery.tweet',
+		colortip:		'libs/colortip'
 	},
     shim: {
         jquery: {
             exports: 'jQuery'
         },
 		tweet: {
+			deps: 		['jquery']
+		},
+		colortip: {
 			deps: 		['jquery']
 		},
         backbone: {

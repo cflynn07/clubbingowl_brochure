@@ -28,7 +28,10 @@ app.configure 'development', () ->
   app.use express.errorHandler()
 
 app.get '/',              routes.index
-app.get '/features',      routes.features;
+
+app.get '/features',            routes.features
+app.get '/features/:feature',   routes.feature
+
 app.get '/faq',           routes.faq;
 app.get '/about',         routes.about 
 app.get '/blog',          routes.blog

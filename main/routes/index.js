@@ -16,12 +16,12 @@
     },
     sms_communication: {
       title: "SMS Communication",
-      image: "RSVPWidget",
+      image: "SMSCommunication",
       desc: "Use SMS to make announcements to your team and your clientele directly to their mobile. Enable your promoters to confirm reservation requests and send confirmations automatically."
     },
     viral_facebook_marketing: {
       title: "Viral Facebook Marketing",
-      image: "RSVPWidget",
+      image: "ViralFacebook",
       desc: "When a client RSVPs, using our widget, your event information is posted on their Facebook wall, along with a link to the event. More posts of your event increase exposure and makes more people want to go."
     },
     promoter_rating: {
@@ -142,9 +142,22 @@
   };
 
   exports.features = function(req, res) {
+    console.log(req);
     return render_views(req, res, 'view_features', {
       features: features_object
     });
+  };
+
+  exports.feature = function(req, res) {
+    console.log(req.params);
+    if (features_object[req.params.feature] != null) {
+      return render_views(req, res, 'view_feature', {
+        features: features_object,
+        features_index: req.params.feature
+      });
+    } else {
+      return render_views(req, res, 'view_404', {}, 404);
+    }
   };
 
   exports.faq = function(req, res) {

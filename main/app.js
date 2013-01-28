@@ -42,6 +42,8 @@
 
   app.get('/features', routes.features);
 
+  app.get('/features/:feature', routes.feature);
+
   app.get('/faq', routes.faq);
 
   app.get('/about', routes.about);

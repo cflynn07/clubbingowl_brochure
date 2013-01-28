@@ -1,0 +1,104 @@
+<%
+	var feature = features[features_index];
+	
+	var siblings = function(obj, key) {
+	  	var keys 	= Object.keys(obj),
+	  			i 	= keys.indexOf(key);
+		
+		var sibs = {
+			left: '',
+			right: ''
+		};
+		
+		if(i !== -1){
+			
+			if(i === 0){
+				
+				sibs.left 	= keys[keys.length - 1];
+				sibs.right	= keys[1]
+				
+			}else if(i === (keys.length - 1)){
+				
+				sibs.left 	= keys[i - 1];
+				sibs.right	= keys[0];
+				
+			}else{
+				
+				sibs.left 	= keys[i - 1];
+				sibs.right 	= keys[i + 1];
+				
+			}
+			
+			return sibs;
+			
+		}else{
+			
+			return sibs;
+	
+			
+		}	  
+	};
+	
+	var sibs = siblings(features, features_index);
+	
+%>
+<div class="container gallery clearfix">
+  
+   <div class="sixteen columns"> <h1 class="page-title">Features<span class="line"></span></h1>
+   </div><!-- Page Title -->
+   
+   <div class="sixteen columns top-2">
+   	
+   		<h2 class="title"> <span class="color2"><%= feature.title %></span> <a href="/features/<%= sibs.right %>" data="Next Feature" class="next-project"></a> 
+   		<a href="/features/<%= sibs.left %>" data="Previous Feature" class="prev-project"></a></h2>
+   
+   </div><!-- Project Title -->
+   
+   
+   
+   
+   
+   <!-- Start Project Slider -->
+   <div class="twelve columns top bottom">
+     <div class="slider-project">
+      <div class="flex-container">
+
+		<div style="text-align:center;">
+			<img src="/images/features/<%= feature.image %>_large.png">
+			<span class="hover-effect big zoom"></span>
+		</div>
+		
+      </div>
+     </div><!-- End slider-project -->  
+   </div>
+   <!-- End -->
+   
+   
+   
+   
+   
+   <!-- Start Project Details -->
+   <div class="four columns  bottom">
+   
+     <h2 class="title top-5  bottom-2">About <span class="line"></span></h2>
+     
+     <div class="about-project bottom">
+       <p><%= feature.desc %></p>
+     </div>
+     
+     <div class="clearfix"></div>
+     
+     <h2 class="title bottom-2">Job Description <span class="line"></span></h2>
+     
+      <ul class="square-list job bottom-2">
+        <li><a href="#">HTML/CSS</a></li>
+        <li><a href="#">Logo Design</a></li>
+        <li><a href="#">User Interface Design</a></li>
+      </ul><!-- End square-list -->
+      
+      
+      <a href="/features" class="button medium color">All Features</a>
+   
+   </div>
+   <!-- End Project Details -->
+  </div><!-- <<< End Container >>> -->

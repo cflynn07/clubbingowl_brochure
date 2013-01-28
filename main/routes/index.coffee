@@ -9,11 +9,11 @@ features_object =
     desc:   "Simple widget that enables clientele to join guest lists and reserve tables through a single click and without having to fill out cumbersome RSVP forms. You recieve consistent and reliable data, providing meaningful insights into your clientele. The widget can be placed on any webpage and Facebook fan-page or can be accessed at ClubbingOwl.com"
   sms_communication:
     title:  "SMS Communication"
-    image:  "RSVPWidget"
+    image:  "SMSCommunication"
     desc:   "Use SMS to make announcements to your team and your clientele directly to their mobile. Enable your promoters to confirm reservation requests and send confirmations automatically."
   viral_facebook_marketing:
     title:  "Viral Facebook Marketing"
-    image:  "RSVPWidget"
+    image:  "ViralFacebook"
     desc:   "When a client RSVPs, using our widget, your event information is posted on their Facebook wall, along with a link to the event. More posts of your event increase exposure and makes more people want to go."
   promoter_rating:
     title:  "Promoter Rating"
@@ -112,7 +112,15 @@ exports.index = (req, res) ->
   render_views(req, res, 'view_index')
     
 exports.features = (req, res) ->
+  console.log req
   render_views(req, res, 'view_features', features: features_object)
+
+exports.feature = (req, res) ->
+  console.log req.params
+  if features_object[req.params.feature]?
+    render_views(req, res, 'view_feature', features: features_object, features_index: req.params.feature)
+  else
+    render_views(req, res, 'view_404', {}, 404)
 
 exports.faq = (req, res) ->
   render_views(req, res, 'view_faq')

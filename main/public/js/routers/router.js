@@ -1,4 +1,4 @@
-define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], function(Backbone, $, log, Wrapper, flexslider){
+define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider', 'colortip'], function(Backbone, $, log, Wrapper, flexslider, colortip){
 	
 	new Wrapper();
 	
@@ -52,6 +52,8 @@ define(['backbone', 'jquery', 'modules/log', 'views/wrapper', 'flexslider'], fun
 		features: function(){
 			
 			log('features');
+			
+			$('[data]').colorTip({color:'yellow'});
 			
 		//	_gaq.push(['_trackPageview']);
 			
