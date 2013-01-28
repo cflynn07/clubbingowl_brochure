@@ -31,7 +31,13 @@ app.get '/',              routes.index
 app.get '/features',      routes.features;
 app.get '/faq',           routes.faq;
 app.get '/about',         routes.about 
+
 app.get '/blog',          routes.blog
+
+
+app.get '/blog/only-realtime-management-system' routes.blog_realtime
+
+
 app.get '/contact',       routes.contact
 app.get '*',              routes.error
 
