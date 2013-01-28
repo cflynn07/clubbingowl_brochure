@@ -34,6 +34,10 @@ features_object =
     title:  "Guest List Management"
     image:  "GuestListManagement"
     desc:   "Promotional staff and team-managers can easily view, edit and grow Facebook-powered guest lists. Add clients manually even if they don't have Facebook. Instantly send a message to everyone on your guest list by updating your list \"status.\" ClubbingOwl will automatically send it to everyone via SMS/email. Communicating with your clients has never been easier!"
+  live_chat:
+    title:  "Live Team Chat"
+    image:  "TeamChat"
+    desc:   "Real time team communication system. Coordinate with your team easily. ClubbingOwl's internal chat system works on both PC & mobile."
   team_management:
     title:  "Table Management"
     image:  "TableManagement"
@@ -45,7 +49,7 @@ features_object =
     ]
   tablet_and_mobile:
     title:  "Tablet and Mobile"
-    image:  ""
+    image:  "TabletMobile"
     desc:   "One platform designed to run easily on PC, tablet and mobile. Hosts can check-in clientele using a tablet device and promoters can access their guest lists from a smartphone: any time, anywhere. ClubbingOwl is web-based and resizes in the web-browser to accommodate all web-enabled devices."
   promotional_staff_management:
     title:  "Promotional Staff Management"
@@ -56,7 +60,7 @@ features_object =
     ]
   host_checkin_tool:
     title:  "Host Check-In Tool"
-    image:  ""
+    image:  "CheckIn"
     desc:   "Swiftly Check-In clientele with a laptop, tablet or mobile device. Allow Hosts, at the door, to check-in clients at different price points and receive a report of total check-ins when the night ends. Also, make use of the easy look-up functionality, so you will never have to search through an entire list again! The host's guest list will always be 100% up to date thanks to our state of the art 100% realtime technology."
   email_marketing:
     title:  "Email Marketing"
