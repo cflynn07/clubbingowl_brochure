@@ -16,7 +16,10 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 		
 		if(window.location.pathname == url || window.location.href == url)
 			return true;
-
+		
+		target.css({
+			opacity: 0.3
+		});
 
 		// Ajax Request the Traditional Page
 		$.ajax({
@@ -29,6 +32,9 @@ define(['jquery', 'history', 'modules/log', 'modules/ganalytics'], function($, H
 								
 				target.slideUp('slow', function(){
 					
+					target.css({
+						opacity: 1
+					});
 					target.html(data);
 				
 					target.slideDown('slow', function(){
