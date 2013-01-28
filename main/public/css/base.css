@@ -396,3 +396,7 @@ img {
 .color2 {
 	color: #7273A2;
 }
+
+img.pic {
+	border-radius: 10px;
+}
