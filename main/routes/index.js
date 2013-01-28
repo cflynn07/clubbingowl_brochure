@@ -158,21 +158,6 @@
   exports.blog = function(req, res) {
     return render_views(req, res, 'view_blog');
   };
-  
-  
-  
-  exports.blog_only_realtime = function(req, res){
-  	return render_views(req, res, 'view_blog');
-  };
-  exports.blog_power_of_facebook = function(req, res){
-  	return render_views(req, res, 'view_blog');
-  };
-  exports.blog_sms_communication = function(req, res){
-  	return render_views(req, res, 'view_blog');
-  };
-  
-  
-  
 
   exports.contact = function(req, res) {
     return render_views(req, res, 'view_contact');
