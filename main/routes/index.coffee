@@ -23,38 +23,52 @@ features_object =
     title:  "Viral Facebook Marketing"
     image:  "ViralFacebook"
     desc:   "When a client RSVPs, using our widget, your event information is posted on their Facebook wall, along with a link to the event. More posts of your event increase exposure and makes more people want to go."
-  promoter_rating:
-    title:  "Promoter Rating"
-    image:  ""
+  promoter_ratings:
+    title:  "Promoter Ratings"
+    image:  "PromoterRating"
     desc:   "ClubbingOwl provides a system for your clientele to rate their experience with a promoter and share it with their friends. A rating can only be given once the clientele has been checked in at the venue. Only friends of the ranker can see it, making the rating more relevant to your clientele and protecting the image of your promoters."
+    additional_images: [
+      "PromoterRating_1"
+    ]
   guest_list_management:
     title:  "Guest List Management"
-    image:  ""
+    image:  "GuestListManagement"
     desc:   "Promotional staff and team-managers can easily view, edit and grow Facebook-powered guest lists. Add clients manually even if they don't have Facebook. Instantly send a message to everyone on your guest list by updating your list \"status.\" ClubbingOwl will automatically send it to everyone via SMS/email. Communicating with your clients has never been easier!"
   team_management:
     title:  "Table Management"
-    image:  ""
+    image:  "TableManagement"
     desc:   "Easily build custom venue table layouts with a simple drag-and-drop floorplan builder and allow clientele to book tables. Change venue layout, table available, table reservation assignments and rest assured everyone on your staff is updated in 100% realtime."
+    additional_images: [
+      "TableManagement_1"
+      "TableManagement_2"
+      "TableManagement_3"
+    ]
   tablet_and_mobile:
     title:  "Tablet and Mobile"
     image:  ""
     desc:   "One platform designed to run easily on PC, tablet and mobile. Hosts can check-in clientele using a tablet device and promoters can access their guest lists from a smartphone: any time, anywhere. ClubbingOwl is web-based and resizes in the web-browser to accommodate all web-enabled devices."
   promotional_staff_management:
     title:  "Promotional Staff Management"
-    image:  ""
+    image:  "PromotionalStaffManagement"
     desc:   "Increase the exposure of your promoters through a ClubbingOwl profile and give them access to powerful marketing tools that will help them grow their clientele database. Monitor their progress, chat with them over the integrated team chat and track which of your promoters are working the hardest."
+    additional_images: [
+      "PromotionalStaffManagement_1"
+    ]
   host_checkin_tool:
     title:  "Host Check-In Tool"
     image:  ""
     desc:   "Swiftly Check-In clientele with a laptop, tablet or mobile device. Allow Hosts, at the door, to check-in clients at different price points and receive a report of total check-ins when the night ends. Also, make use of the easy look-up functionality, so you will never have to search through an entire list again! The host's guest list will always be 100% up to date thanks to our state of the art 100% realtime technology."
   email_marketing:
     title:  "Email Marketing"
-    image:  ""
+    image:  "EmailMarketing"
     desc:   "With ClubbingOwl all your marketing tools are integrated into one simple platform! Design email newsletters and send them to your client database at a cheaper rate than solutions such as MailChimp."
   search_engine_optimization:
     title:  "Search Engine Optimization"
-    image:  ""
+    image:  "SEO"
     desc:   "Improve the search engine discovery of your guest lists, events, promoters, and venues. ClubbingOwl's public-facing web application for clubgoers was designed with great care to be easily indexible by search engines and boost our client search discovery performance."
+    additional_images: [
+      "SEO_1"
+    ]
   private_and_collaberative_notes:
     title:  "Private and Collaberative Notes"
     image:  ""
