@@ -40,7 +40,9 @@
 
   app.get('/', routes.index);
 
-  app.get('/features-faq', routes.features);
+  app.get('/features', routes.features);
+
+  app.get('/faq', routes.faq);
 
   app.get('/about', routes.about);
 

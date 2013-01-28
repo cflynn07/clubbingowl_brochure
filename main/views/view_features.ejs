@@ -12,6 +12,41 @@
       </div>
     </div><!-- End description -->
     
+    <div class="portfolio">
+    
+      <div class="gallery" id="contain"> 
+      
+      <% var count = 0; %>
+      <% for(var i in features) { %>
+      	<% var feature = features[i]; %>
+      	<div class="one-third column item element-3 Animation Web" data-categories="Animation Web">
+          <div class="caption">
+          <a href="/features/<%= i %>/">
+          	<img src="/images/features/<%= feature.image %>.png" alt="" class="pic" />
+          <span class="hover-effect link"></span></a>
+          </div><!-- hover effect -->
+          <h4><a class="color2" href="/features/<%= i %>/"><%= feature.title %></a></h4>
+          <p><%= feature.desc %></p>
+      	</div>
+      	
+      	<% count++;
+      	  if(count % 3 === 0){ %>
+      		<div class="clearfix"></div>
+      	<% } %>
+      	
+      <% } %>
+      
+	</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="recent-work gallery clearfix">
     
      <div class="slidewrap" >
@@ -26,17 +61,17 @@
 
       <div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-1.jpg" alt="" class="pic" /> 
+          <a href="/images/features/RSVPWidget_large.png"><img src="/images/features/RSVPWidget.png" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Single Click RSVP</a></h4>
+          <h4><a href="#">Single Click RSVP</a></h4>
           <p>Simple widget that enables clientele to join guest lists and reserve tables through a single click and without having to fill out cumbersome RSVP forms. You recieve consistent and reliable data, providing meaningful insights into your clientele. The widget can be placed on any webpage and Facebook fan-page or can be accessed at ClubbingOwl.com</p>
       </div>
 
       <div class="four columns item">
           <div class="caption">
-          <a href="images/SMSCommunication.jpg" rel="prettyPhoto[gallery1]">
-          <img src="images/SMSCommunication.jpg" alt="" class="pic" />
+          <a href="/images/SMSCommunication.jpg" rel="prettyPhoto[gallery1]">
+          <img src="/images/SMSCommunication.jpg" alt="" class="pic" />
           <span class="hover-effect zoom"></span></a>
           </div><!-- hover effect -->
           <h4><a href="#">SMS Communication</a></h4>
@@ -45,7 +80,7 @@
 
         <div class="four columns item">
           <div class="caption">
-          <a href="#"><img src="images/FBShare.png" alt="" class="pic" /> 
+          <a href="#"><img src="/images/FBShare.png" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
           <h4><a href="#">Viral Facebook Marketing</a></h4>
@@ -54,10 +89,10 @@
 
 	  	<div class="four columns item">
 	      <div class="caption">
-	      <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+	      <a href="#"><img src="/images/features/PromoterRate.jpg" alt="" class="pic" /> 
 	      <span class="hover-effect link"></span></a>
 	      </div><!-- hover effect -->
-	      <h4><a href="single_project_1.html">Promoter Rating</a></h4>
+	      <h4><a href="#">Promoter Rating</a></h4>
 	      <p>ClubbingOwl provides a system for your clientele to rate their experience with a promoter and share it with their friends. A rating can only be given once the clientele has been checked in at the venue. Only friends of the ranker can see it, making the rating more relevant to your clientele and protecting the image of your promoters.</p>
 	  	</div>
       
@@ -67,37 +102,37 @@
       
       	<div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/guest_list_management.jpg" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Guest List Management</a></h4>
+          <h4><a href="#">Guest List Management</a></h4>
           <p>Promotional staff and team-managers can easily view, edit and grow Facebook-powered guest lists. Add clients manually even if they don't have Facebook. Instantly send a message to everyone on your guest list by updating your list "status." ClubbingOwl will automatically send it to everyone via SMS/email. Communicating with your clients has never been easier!</p>
       </div>
       
       <div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/table_management.png" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Table Management</a></h4>
+          <h4><a href="#">Table Management</a></h4>
           <p>Easily build custom venue table layouts with a simple drag-and-drop floorplan builder and allow clientele to book tables. Change venue layout, table available, table reservation assignments and rest assured everyone on your staff is updated in 100% realtime.</p>
       </div>
       
       <div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/Mobile.jpg" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Tablet and Mobile</a></h4>
+          <h4><a href="#">Tablet and Mobile</a></h4>
           <p>One platform designed to run easily on PC, tablet and mobile. Hosts can check-in clientele using a tablet device and promoters can access their guest lists from a smartphone: any time, anywhere. ClubbingOwl is web-based and resizes in the web-browser to accommodate all web-enabled devices.</p>
       </div>
       
       <div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/ManageStaff.jpg" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Promotional Staff Management</a></h4>
+          <h4><a href="#">Promotional Staff Management</a></h4>
           <p>Increase the exposure of your promoters through a ClubbingOwl profile and give them access to powerful marketing tools that will help them grow their clientele database. Monitor their progress, chat with them over the integrated team chat and track which of your promoters are working the hardest.</p>
       	</div>
       	
@@ -107,38 +142,38 @@
       	
       	<div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Host Check-in Tool</a></h4>
+          <h4><a href="#">Host Check-in Tool</a></h4>
           <p>Swiftly Check-In clientele with a laptop, tablet or mobile device. Allow Hosts, at the door, to check-in clients at different price points and receive a report of total check-ins when the night ends. Also, make use of the easy look-up functionality, so you will never have to search through an entire list again! The host's guest list will always be 100% up to date thanks to our state of the art 100% realtime technology.</p>
       	</div>
       	
       	<div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/Email.jpg" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Email Marketing</a></h4>
+          <h4><a href="#">Email Marketing</a></h4>
           <p>With ClubbingOwl all your marketing tools are integrated into one simple platform! Design email newsletters and send them to your client database at a cheaper rate than solutions such as MailChimp.</p>
       	</div>
 
       	<div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Search Engine Optimization</a></h4>
+          <h4><a href="#">Search Engine Optimization</a></h4>
           <p>Improve the search engine discovery of your guest lists, events, promoters, and venues. ClubbingOwl's public-facing web application for clubgoers was designed with great care to be easily indexible by search engines and boost our client search discovery performance.</p>
       	</div>
       	
-      	<% if(false){ %>
+      	<% if(true){ %>
       	<div class="four columns item">
           <div class="caption">
-          <a href="single_project_1.html"><img src="images/img/thumbs/thumb-3.jpg" alt="" class="pic" /> 
+          <a href="#"><img src="/images/features/Notes.jpg" alt="" class="pic" /> 
           <span class="hover-effect link"></span></a>
           </div><!-- hover effect -->
-          <h4><a href="single_project_1.html">Private and Collaberative Notes</a></h4>
+          <h4><a href="#">Private and Collaberative Notes</a></h4>
           <p>Know your client even before they know you! Add private or collaborative notes to your clientele database and deliver exceptional customer service. Set yourself apart from competitors and capture clientele preferences as you grow your client base.</p>
       	</div>
       	<% } %>
