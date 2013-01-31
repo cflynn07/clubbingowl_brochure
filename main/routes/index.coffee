@@ -62,6 +62,12 @@ features_object =
     title:  "Host Check-In Tool"
     image:  "CheckIn"
     desc:   "Swiftly Check-In clientele with a laptop, tablet or mobile device. Allow Hosts, at the door, to check-in clients at different price points and receive a report of total check-ins when the night ends. Also, make use of the easy look-up functionality, so you will never have to search through an entire list again! The host's guest list will always be 100% up to date thanks to our state of the art 100% realtime technology."
+    additional_images: [
+      "CheckIn_1"
+      "CheckIn_2"
+      "CheckIn_3"
+      "CheckIn_4"
+    ]
   email_marketing:
     title:  "Email Marketing"
     image:  "EmailMarketing"
