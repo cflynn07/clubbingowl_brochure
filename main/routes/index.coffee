@@ -51,6 +51,15 @@ features_object =
     title:  "Tablet and Mobile"
     image:  "TabletMobile"
     desc:   "One platform designed to run easily on PC, tablet and mobile. Hosts can check-in clientele using a tablet device and promoters can access their guest lists from a smartphone: any time, anywhere. ClubbingOwl is web-based and resizes in the web-browser to accommodate all web-enabled devices."
+    additional_images: [
+      "TabletMobile_1"
+      "TabletMobile_2"
+      "TabletMobile_3"
+      "TabletMobile_4"
+      "TabletMobile_5"
+      "TabletMobile_6"
+      "TabletMobile_7"
+    ]
   promotional_staff_management:
     title:  "Promotional Staff Management"
     image:  "PromotionalStaffManagement"
