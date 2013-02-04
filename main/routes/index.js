@@ -189,6 +189,25 @@
     return render_views(req, res, 'view_contact');
   };
 
+  exports.post_contact = function(req, res) {
+    var nodemailer, smtpTransport;
+    nodemailer = require('nodemailer');
+    smtpTransport = nodemailer.createTransport('SMTP', {
+      service: 'Gmail',
+      auth: {
+        user: 'casey_flynn@clubbingowl.com',
+        pass: 'nemesisargo'
+      }
+    });
+    smtpTransport.sendMail({
+      from: 'no-reply@clubbingowl.com',
+      to: 'casey_flynn@clubbingowl.com, johann_barlach@clubbingowl.com',
+      subject: 'ClubbingOwl Contact Form',
+      text: JSON.stringify(req.body)
+    });
+    return res.send();
+  };
+
   exports.error = function(req, res) {
     return render_views(req, res, 'view_404', {}, 404);
   };

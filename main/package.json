@@ -10,6 +10,7 @@
     "ejs": 				"*",
     "html-minifier": 	"*",
     "coffee-script":	"*",
-    "requirejs":		"*"
+    "requirejs":		"*",
+    "nodemailer":	"*"
   }
 }
