@@ -11,7 +11,12 @@
     "html-minifier": 	"*",
     "coffee-script":	"*",
     "requirejs":		"*",
+<<<<<<< HEAD
     "async":			"*"
     "nodemailer":		"*"
 
+=======
+    "nodemailer":	"*"
+  }
+>>>>>>> 647e78c71c3f242008f69d2eb48b338f94b6b0e7
 }
