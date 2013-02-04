@@ -1,6 +1,7 @@
 os 				      = require 'os'
 url 			      = require 'url'
 html_minifier   = require 'html-minifier'
+async           = require 'async'
 
 features_object = 
   one_click_rsvp: 
@@ -92,10 +93,28 @@ features_object =
     title:  "Private and Collaberative Notes"
     image:  "Notes"
     desc:   "Know your client even before they know you! Add private or collaborative notes to your clientele database and deliver exceptional customer service. Set yourself apart from competitors and capture clientele preferences as you grow your client base."
-  
+
+blogs_object = 
+  the_only_realtime_venue_management_system:
+      title:  "The Only REALTIME Venue Management System"
+      date:   "1 January, 2013"
+      author: "Casey"
+      body:   ""
+
+
+
     
 render_views = (req, res, body_view, args = {}, code = 200) ->
-
+  
+  async.parallel [
+    
+    (callback) ->
+      
+      
+  ], () ->
+    console.log 'foo'
+  
+  
   complete = (arg) ->
 
     response  = arg.response
@@ -169,8 +188,19 @@ exports.faq = (req, res) ->
 exports.about = (req, res) ->
   render_views(req, res, 'view_about')
 
-exports.blog = (req, res) ->
+exports.blogs = (req, res) ->
   render_views(req, res, 'view_blog')
+  
+  
+  
+exports.blog = (req, res) ->
+  console.log req.params
+  if blogs_object[req.params.entry]?
+    render_views(req, res, 'view_blog', features: features_object, features_index: req.params.feature)
+  else 
+    render_views(req, res, 'view_404', {}, 404)
+
+
 
 exports.contact = (req, res) ->
   render_views(req, res, 'view_contact')

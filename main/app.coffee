@@ -34,7 +34,10 @@ app.get '/features/:feature',   routes.feature
 
 app.get '/faq',           routes.faq;
 app.get '/about',         routes.about 
-app.get '/blog',          routes.blog
+
+app.get '/blog',          routes.blogs
+app.get '/blog/:entry'    routes.blog
+
 app.get '/contact',       routes.contact
 app.get '*',              routes.error
 
