@@ -204,6 +204,25 @@ exports.blog = (req, res) ->
 
 exports.contact = (req, res) ->
   render_views(req, res, 'view_contact')
+  
+  
+exports.post_contact = (req, res) ->
+    
+  nodemailer    = require 'nodemailer'
+  smtpTransport = nodemailer.createTransport 'SMTP', 
+    service: 'Gmail'
+    auth: 
+      user: 'casey_flynn@clubbingowl.com'
+      pass: 'nemesisargo'
+  
+  smtpTransport.sendMail 
+    from:     'no-reply@clubbingowl.com'
+    to:       'casey_flynn@clubbingowl.com, johann_barlach@clubbingowl.com'
+    subject:  'ClubbingOwl Contact Form'
+    text:     JSON.stringify req.body
+    
+  res.send()
+   
 
 exports.error = (req, res) ->
   render_views(req, res, 'view_404', {}, 404)

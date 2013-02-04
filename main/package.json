@@ -12,5 +12,6 @@
     "coffee-script":	"*",
     "requirejs":		"*",
     "async":			"*"
-  }
+    "nodemailer":		"*"
+
 }
