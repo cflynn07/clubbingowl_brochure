@@ -89,8 +89,8 @@ features_object =
     additional_images: [
       "SEO_1"
     ]
-  private_and_collaberative_notes:
-    title:  "Private and Collaberative Notes"
+  private_and_collaborative_notes:
+    title:  "Private and Collaborative Notes"
     image:  "Notes"
     desc:   "Know your client even before they know you! Add private or collaborative notes to your clientele database and deliver exceptional customer service. Set yourself apart from competitors and capture clientele preferences as you grow your client base."
 
