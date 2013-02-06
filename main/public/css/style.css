@@ -1445,8 +1445,8 @@ input.subscribe-button {
 }
 
 #sidebar.thumbs li img, #footer.thumbs li img {
-width: 143px;
-height: 115px;
+	width: 143px;
+	height: 115px;
 }
 
 
