@@ -92,19 +92,19 @@
     the_only_realtime_venue_management_system: {
       title: 'The Only REALTIME Venue Management System',
       date: '1 January, 2013',
-      author: 'Casey',
+      author: 'Casey Flynn',
       concat: 500
     },
     the_power_of_facebook: {
-      title: 'The power of facebook',
+      title: 'The Power of Facebook',
       date: '25 December, 2012',
-      author: 'Johann',
+      author: 'Johann Barlach',
       concat: 500
     },
     powerful_sms_communication_for_teams: {
-      title: 'Powerful SMS Communication for Teams',
+      title: 'Powerful SMS Communication For Teams',
       date: '15 December, 2012',
-      author: 'Johann',
+      author: 'Johann Barlach',
       concat: 500
     }
   };
