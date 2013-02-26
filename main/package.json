@@ -12,6 +12,7 @@
     "coffee-script":	"*",
     "requirejs":		"*",
     "async":			"*",
-    "nodemailer":		"*"
+    "nodemailer":		"*",
+    "underscore":		"*"
   }
 }
